@@ -1,0 +1,65 @@
+﻿@using BookStore.Client.DTO
+@model BookStore.Client.DTO.CustomerDTO
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detailss</h1>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Addres)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Addres)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Orders):
+        </dt>
+        <dd class="col-sm-10"></dd>
+        @foreach (var order in (IEnumerable<OrderDTO>) ViewData["Orders"])
+        {
+            <dd class="col-sm-2">@order.Date</dd>
+            <dt class="col-sm-8">@order.Book.Title 
+                @if (@order.Arrived)
+                {
+                    <text>(Arrived)</text>
+                }
+                </dt>
+            <dd class="col-sm-12"><a asp-controller="Orders" asp-action="Details" asp-route-id="@Model.Id">Open</a></dd>
+        }
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
