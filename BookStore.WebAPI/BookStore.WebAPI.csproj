@@ -25,7 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BookStore.Client\BookStore.Client.csproj" />
     <ProjectReference Include="..\BookStore.DataAccess\BookStore.DataAccess.csproj" />
-    <ProjectReference Include="..\BookStore.DLL\BookStore.BLL.csproj" />
+    <ProjectReference Include="..\BookStore.BLL\BookStore.BLL.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Client", "BookSto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.DataAccess", "BookStore.DataAccess\BookStore.DataAccess.csproj", "{05869B0C-062D-4FFE-B153-84BF7ECAC8AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.BLL", "BookStore.DLL\BookStore.BLL.csproj", "{4E161EDD-BA0C-4780-A56F-F9E6BAAC5F42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.BLL", "BookStore.BLL\BookStore.BLL.csproj", "{4E161EDD-BA0C-4780-A56F-F9E6BAAC5F42}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.BLL.Tests.Unit", "BookStore.BLL.Tests.Unit\BookStore.BLL.Tests.Unit.csproj", "{1D98387B-B406-41A6-A098-9C0072EBEB88}"
 EndProject
